@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NeuroCompare AI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="bg-orb orb1"></div>
+  <div class="bg-orb orb2"></div>
+
+  <header class="topbar">
+    <div class="brand">
+      <div class="brain-logo">🧠</div>
+      <div>
+        <strong>NeuroCompare</strong>
+        <span>AI Answer Arena</span>
+      </div>
+    </div>
+
+    <div class="status">
+      <i></i> Demo AI Engine Online
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero">
+
+      <div class="hero-copy">
+        <p class="eyebrow">ONE QUESTION • FIVE AI SYSTEMS</p>
+
+        <h1>
+          Ask once.<br>
+          <span>Compare intelligence.</span>
+        </h1>
+
+        <p class="sub">
+          Enter any question and compare five AI-style answers,
+          estimated evaluation scores, and the final ranking in one dashboard.
+        </p>
+      </div>
+
+      <div class="brain-art">
+        <div class="brain-glow"></div>
+        <div class="brain">🧠</div>
+
+        <span class="node n1"></span>
+        <span class="node n2"></span>
+        <span class="node n3"></span>
+      </div>
+
+    </section>
+
+
+    <section class="ask-card">
+
+      <label for="question">YOUR QUESTION</label>
+
+      <textarea
+        id="question"
+        placeholder="Ask anything... e.g. What is artificial intelligence?"
+        rows="3"></textarea>
+
+      <div class="ask-row">
+
+        <div class="chips">
+          <button class="chip">What is artificial intelligence?</button>
+          <button class="chip">Explain photosynthesis.</button>
+          <button class="chip">What is machine learning?</button>
+        </div>
+
+        <button id="compareBtn" class="compare-btn">
+          <span>Compare AI Answers</span> →
+        </button>
+
+      </div>
+
+      <div id="validation" class="validation"></div>
+
+    </section>
+
+
+    <section id="results" class="hidden">
+
+      <div class="section-head">
+
+        <div>
+          <p class="eyebrow">LIVE COMPARISON</p>
+          <h2>Five answers. One question.</h2>
+        </div>
+
+        <div id="questionBadge" class="question-badge"></div>
+
+      </div>
+
+
+      <div id="loading" class="loading hidden">
+
+        <div class="loader"></div>
+
+        <span id="loadingText">
+          Analyzing your question...
+        </span>
+
+      </div>
+
+
+      <div id="cards" class="cards"></div>
+
+
+      <section id="ranking" class="ranking hidden">
+
+        <div class="section-head">
+
+          <div>
+            <p class="eyebrow">RESULT</p>
+            <h2>AI Rankings</h2>
+          </div>
+
+        </div>
+
+        <div id="rankingList"></div>
+
+        <div id="winner" class="winner"></div>
+
+        <p class="disclaimer">
+          Estimated demo evaluation based on relevance,
+          completeness and clarity. It is not a verified factual-accuracy measurement.
+        </p>
+
+      </section>
+
+    </section>
+
+  </main>
+
+
+  <footer>
+    NeuroCompare • Frontend Demo • No API keys required
+  </footer>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
